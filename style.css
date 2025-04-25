@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ccccb6;
+    color: #333;
+}
+
+header {
+    background-color: #999989;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: blue;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.left {
+    font-size: 2rem;
+    color: white;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.firstSection > div {
+    width: 30%;
+}
+
+.leftSection {
+    font-size: 2.5rem;
+}
+
+.rightSection {
+    width: 40%;
+}
+
+.purple {
+    color: blue;
+}
+
+.text-green {
+    color: green;
+}
+
+#element {
+    color: blue;
+}
+
+.round-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.secondSection, .thirdSection, .contactSection {
+    max-width: 80vw;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.secondSection h1, .thirdSection h1, .contactSection h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.box-1 {
+    background-color: gray;
+    height: 2px;
+    width: 80vw;
+    margin: 40px 0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #e1e1d0;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    background-color: #d5d5c2;
+}
+
+.contactSection form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactSection input, .contactSection textarea {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: darkblue;
+}
+
+footer {
+    background-color: #999989;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: white;
+    font-size: 0.9rem;
+}

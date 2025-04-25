@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash - Developer Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Akash's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="firstSection">
+            <div class="leftSection">
+                Hello! I'm Abu Syeed <span class="purple">Akash</span>
+                <div>and I'm a Passionate </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="image.jpg" alt="Akash Profile Picture" class="round-image">
+            </div>
+        </section>
+
+        <section id="about" class="secondSection">
+            <span class="text-green">What I Have Done So Far</span>
+            <h1>Work Experience</h1>
+            <div class="box-1">
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+        </section>
+
+        <section id="projects" class="thirdSection">
+            <h1>My Projects</h1>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h2>Portfolio Website</h2>
+                    <p>Built a responsive portfolio using HTML, CSS, JavaScript.</p>
+                </div>
+                <div class="project-card">
+                    <h2>E-commerce Website</h2>
+                    <p>Developed a full-stack e-commerce platform with payment gateway integration.</p>
+                </div>
+                <div class="project-card">
+                    <h2>Blog Platform</h2>
+                    <p>Created a CMS-based blog where users can post, comment, and like articles.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contactSection">
+            <h1>Contact Me</h1>
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Akash. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Software Engineer', 'Sales Expert', 'Philosopher'],
+            typeSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
